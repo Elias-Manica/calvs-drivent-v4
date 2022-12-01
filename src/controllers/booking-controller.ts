@@ -5,7 +5,7 @@ import bookingService from "@/services/booking-service";
 
 export async function getBooking(req: AuthenticatedRequest, res: Response) {
   const { userId } = req;
-    
+
   try {
     const booking = await bookingService.getBooking(Number(userId));
     return res.status(httpStatus.OK).send(booking);
@@ -13,9 +13,6 @@ export async function getBooking(req: AuthenticatedRequest, res: Response) {
     if (error.name === "NotFoundError") {
       return res.sendStatus(httpStatus.NOT_FOUND);
     }
-    if (error.name === "CannotListHotelsError") {
-      return res.sendStatus(httpStatus.PAYMENT_REQUIRED);
-    }
-    return res.sendStatus(httpStatus.PAYMENT_REQUIRED);
+    return res.sendStatus(httpStatus.FORBIDDEN);
   }
 }
