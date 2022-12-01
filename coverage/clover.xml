@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669907575457" clover="3.2.0">
-  <project timestamp="1669907575457" name="All files">
-    <metrics statements="570" coveredstatements="534" conditionals="78" coveredconditionals="55" methods="91" coveredmethods="83" elements="739" coveredelements="672" complexity="0" loc="570" ncloc="570" packages="26" files="63" classes="63"/>
+<coverage generated="1669921170913" clover="3.2.0">
+  <project timestamp="1669921170913" name="All files">
+    <metrics statements="599" coveredstatements="562" conditionals="83" coveredconditionals="60" methods="96" coveredmethods="87" elements="778" coveredelements="709" complexity="0" loc="599" ncloc="599" packages="27" files="64" classes="64"/>
     <package name="src">
       <metrics statements="22" coveredstatements="16" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="2"/>
       <file name="app.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/app.ts">
@@ -59,7 +59,7 @@
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="134" coveredstatements="129" conditionals="15" coveredconditionals="13" methods="14" coveredmethods="14"/>
+      <metrics statements="147" coveredstatements="142" conditionals="18" coveredconditionals="16" methods="15" coveredmethods="15"/>
       <file name="authentication-controller.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/controllers/authentication-controller.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="11" type="stmt"/>
@@ -72,7 +72,7 @@
         <line num="12" count="2" type="stmt"/>
       </file>
       <file name="booking-controller.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/controllers/booking-controller.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="3" count="11" type="stmt"/>
         <line num="4" count="11" type="stmt"/>
         <line num="6" count="11" type="stmt"/>
@@ -83,6 +83,19 @@
         <line num="13" count="6" type="cond" truecount="1" falsecount="0"/>
         <line num="14" count="1" type="stmt"/>
         <line num="16" count="5" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="23" count="11" type="stmt"/>
+        <line num="25" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="29" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="33" count="9" type="stmt"/>
+        <line num="34" count="9" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="7" type="stmt"/>
       </file>
       <file name="enrollments-controller.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/controllers/enrollments-controller.ts">
         <metrics statements="20" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
@@ -232,7 +245,7 @@
       <file name="cannot-list-hotels-error.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/errors/cannot-list-hotels-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
+        <line num="4" count="14" type="stmt"/>
       </file>
       <file name="conflict-error.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/errors/conflict-error.ts">
         <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -262,7 +275,7 @@
       <file name="not-found-error.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/errors/not-found-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="12" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
       </file>
       <file name="request-error.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/errors/request-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -272,7 +285,7 @@
       <file name="unauthorized-error.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/errors/unauthorized-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="32" type="stmt"/>
+        <line num="4" count="35" type="stmt"/>
       </file>
     </package>
     <package name="src.middlewares">
@@ -284,18 +297,18 @@
         <line num="5" count="11" type="stmt"/>
         <line num="6" count="11" type="stmt"/>
         <line num="8" count="11" type="stmt"/>
-        <line num="9" count="73" type="stmt"/>
-        <line num="10" count="73" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="63" type="stmt"/>
-        <line num="13" count="63" type="cond" truecount="0" falsecount="1"/>
-        <line num="15" count="63" type="stmt"/>
-        <line num="16" count="63" type="stmt"/>
-        <line num="18" count="53" type="stmt"/>
-        <line num="23" count="53" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="43" type="stmt"/>
-        <line num="27" count="43" type="stmt"/>
-        <line num="29" count="10" type="stmt"/>
-        <line num="34" count="30" type="stmt"/>
+        <line num="9" count="87" type="stmt"/>
+        <line num="10" count="87" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="76" type="stmt"/>
+        <line num="13" count="76" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="76" type="stmt"/>
+        <line num="16" count="76" type="stmt"/>
+        <line num="18" count="65" type="stmt"/>
+        <line num="23" count="65" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="54" type="stmt"/>
+        <line num="27" count="54" type="stmt"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="34" count="33" type="stmt"/>
       </file>
       <file name="error-handling-middleware.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/middlewares/error-handling-middleware.ts">
         <metrics statements="14" coveredstatements="2" conditionals="7" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -346,13 +359,15 @@
       </file>
     </package>
     <package name="src.repositories.booking-repository">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <file name="index.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/repositories/booking-repository/index.ts">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="1" count="11" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="14" count="11" type="stmt"/>
-        <line num="18" count="11" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="31" count="11" type="stmt"/>
+        <line num="37" count="11" type="stmt"/>
       </file>
     </package>
     <package name="src.repositories.enrollment-repository">
@@ -360,7 +375,7 @@
       <file name="index.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/repositories/enrollment-repository/index.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="11" type="stmt"/>
-        <line num="5" count="24" type="stmt"/>
+        <line num="5" count="33" type="stmt"/>
         <line num="14" count="6" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="36" count="11" type="stmt"/>
@@ -399,6 +414,16 @@
         <line num="28" count="11" type="stmt"/>
       </file>
     </package>
+    <package name="src.repositories.room-repository">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/repositories/room-repository/index.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="11" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="14" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+      </file>
+    </package>
     <package name="src.repositories.session-repository">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/repositories/session-repository/index.ts">
@@ -418,7 +443,7 @@
         <line num="5" count="2" type="stmt"/>
         <line num="9" count="8" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
-        <line num="30" count="17" type="stmt"/>
+        <line num="30" count="24" type="stmt"/>
         <line num="41" count="2" type="stmt"/>
         <line num="49" count="3" type="stmt"/>
         <line num="61" count="11" type="stmt"/>
@@ -458,7 +483,7 @@
         <line num="3" count="11" type="stmt"/>
         <line num="5" count="11" type="stmt"/>
         <line num="7" count="11" type="stmt"/>
-        <line num="11" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
       </file>
       <file name="enrollments-router.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/routers/enrollments-router.ts">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -613,30 +638,40 @@
       </file>
     </package>
     <package name="src.services.booking-service">
-      <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <metrics statements="31" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
       <file name="index.ts" path="/home/elias/Documentos/projetosDriven/calvs-drivent/src/services/booking-service/index.ts">
-        <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <metrics statements="31" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
         <line num="1" count="11" type="stmt"/>
         <line num="2" count="11" type="stmt"/>
         <line num="3" count="11" type="stmt"/>
         <line num="4" count="11" type="stmt"/>
         <line num="5" count="11" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="10" count="7" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="16" count="6" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="20" count="5" type="cond" truecount="5" falsecount="0"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="26" count="7" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="30" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="42" count="11" type="stmt"/>
-        <line num="46" count="11" type="stmt"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+        <line num="11" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="15" count="13" type="stmt"/>
+        <line num="17" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="21" count="11" type="cond" truecount="5" falsecount="0"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="31" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="44" count="9" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="48" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="52" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="65" count="11" type="stmt"/>
+        <line num="70" count="11" type="stmt"/>
       </file>
     </package>
     <package name="src.services.enrollments-service">

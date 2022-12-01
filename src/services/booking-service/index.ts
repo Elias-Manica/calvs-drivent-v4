@@ -3,6 +3,7 @@ import ticketRepository from "@/repositories/ticket-repository";
 import { notFoundError } from "@/errors";
 import bookingRepository from "@/repositories/booking-repository";
 import { cannotListHotelsError } from "@/errors/cannot-list-hotels-error";
+import roomRepository from "@/repositories/room-repository";
 
 async function hasValidTicket(userId: number) {
   //Tem enrollment?
@@ -39,8 +40,31 @@ async function getBooking(userId: number) {
   return bodyBooking;
 }
 
+async function postBooking(userId: number, roomId: number) {
+  await hasValidTicket(userId);
+
+  const room = await roomRepository.findRoomById(roomId);
+
+  if(!room) {
+    throw notFoundError();
+  }
+
+  if(room.Booking.length >= room.capacity) {
+    throw cannotListHotelsError();
+  }
+
+  const booking = await bookingRepository.createBooking(userId, room.id);
+
+  const bodyBooking = {
+    id: booking.id
+  };
+
+  return bodyBooking;
+}
+
 const bookingService = {
   getBooking,
+  postBooking
 };
 
 export default bookingService;
