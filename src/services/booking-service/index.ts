@@ -43,6 +43,12 @@ async function getBooking(userId: number) {
 async function postBooking(userId: number, roomId: number) {
   await hasValidTicket(userId);
 
+  const hasBooking = await bookingRepository.findBooking(userId);
+
+  if(hasBooking) {
+    throw cannotListHotelsError();
+  }
+
   const room = await roomRepository.findRoomById(roomId);
 
   if(!room) {
@@ -62,9 +68,47 @@ async function postBooking(userId: number, roomId: number) {
   return bodyBooking;
 }
 
+async function putBooking(userId: number, roomId: number, bookingId: number) {
+  await hasValidTicket(userId);
+
+  const hasBooking = await bookingRepository.listBookingById(bookingId);
+
+  if(!hasBooking) {
+    throw notFoundError();
+  }
+
+  if(hasBooking.userId !== userId) {
+    throw cannotListHotelsError();
+  }
+
+  const room = await roomRepository.findRoomById(roomId);
+
+  if(!room) {
+    throw notFoundError();
+  }
+
+  if(hasBooking.roomId === roomId) {
+    throw cannotListHotelsError();
+  }
+
+  if(room.Booking.length >= room.capacity) {
+    throw cannotListHotelsError();
+  }
+
+  const booking = await bookingRepository.updateBookingById(hasBooking.id, room.id);
+
+  const bodyBooking = {
+    id: booking.id,
+    roomId: booking.roomId
+  };
+
+  return bodyBooking;
+}
+
 const bookingService = {
   getBooking,
-  postBooking
+  postBooking,
+  putBooking
 };
 
 export default bookingService;
