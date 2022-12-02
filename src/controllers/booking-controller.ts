@@ -56,10 +56,6 @@ export async function putBooking(req: AuthenticatedRequest, res: Response) {
     res.sendStatus(httpStatus.BAD_REQUEST);
   }
 
-  if(!bookingId) {
-    res.sendStatus(httpStatus.BAD_REQUEST);
-  }
-
   if(!Number(bookingId)) {
     res.sendStatus(httpStatus.BAD_REQUEST);
   }
